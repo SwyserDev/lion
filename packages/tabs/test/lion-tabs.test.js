@@ -128,7 +128,7 @@ describe.only('<lion-tabs>', () => {
         </lion-tabs>
       `);
       const tabs = el.querySelectorAll('[slot=tab]');
-      tabs.selectedIndex = 2;
+      el.selectedIndex = 2;
       tabs[2].dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowLeft' }));
       expect(el.selectedIndex).to.equal(1);
       tabs[1].dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowUp' }));
@@ -168,7 +168,7 @@ describe.only('<lion-tabs>', () => {
         </lion-tabs>
       `);
       const tabs = el.querySelectorAll('[slot=tab]');
-      tabs[0].dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowRight' }));
+      tabs[2].dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowRight' }));
       expect(el.selectedIndex).to.equal(0);
     });
 
