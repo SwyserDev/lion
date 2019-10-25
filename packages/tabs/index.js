@@ -1,1 +1,1 @@
-export { LionTooltip } from './src/LionTooltip.js';
+export { LionTabs } from './src/LionTabs.js';
