@@ -148,6 +148,7 @@ export class LionTabs extends LitElement {
 
   // eslint-disable-next-line class-methods-use-this
   __selectButton(element) {
+    element.focus();
     element.setAttribute('selected', true);
     element.setAttribute('aria-selected', true);
     element.setAttribute('tabindex', 0);

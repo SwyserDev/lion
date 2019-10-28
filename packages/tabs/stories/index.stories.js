@@ -30,7 +30,7 @@ storiesOf('Tabs', module)
         <button slot="tab">Info</button>
         <button slot="tab">About</button>
         <div slot="panel">
-        <h2>Info</h2>
+          <h2>Info</h2>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sequi odit cumque,
           enim aut assumenda itaque quis voluptas est quos fugiat unde labore reiciendis saepe,
           iure, optio officiis obcaecati quibusdam.
@@ -45,7 +45,7 @@ storiesOf('Tabs', module)
     `,
   )
   .add(
-    'Heading first',
+    'Slots order',
     () => html`
       <lion-tabs>
         <button slot="tab">Info</button>
